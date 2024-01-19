@@ -2,13 +2,19 @@ const items = document.querySelector('.items');
 const input = document.querySelector('.footer__input');
 const addBtn = document.querySelector('.footer__button');
 const clearBtn = document.querySelector('.clear_btn');
-const form = document.querySelector('.new-form');
+const form = document.querySelector('.new_form');
 const ICON_CHECKED = 'change';
 const ICON_UNCHECKED = 'pre';
 const CICLE_CHECKED = 'cicle_change';
 const CICLE_UNCHECKED = 'cicle_pre';
 const STATUS_CHECKED = 'checked';
 const STATUS_UNCHECKED = 'unchecked';
+
+form.addEventListener('submit', (event) => {
+  console.log('hi');
+  event.preventDefault();
+  onAdd();
+});
 
 function onAdd() {
   // 1. 사용자가 입력한 텍스트를 받아옴
@@ -101,7 +107,4 @@ clearBtn.addEventListener('click', () => {
   items.innerHTML = '';
 });
 
-form.addEventListener('sumit', (event) => {
-  event.preventDefault();
-  onAdd();
-});
+

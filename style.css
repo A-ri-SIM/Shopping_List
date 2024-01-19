@@ -85,7 +85,8 @@ body {
   color: #fff;
   border-radius: 20px;
 }
-.footer {
+.new_form{
+  width: 100%;
   display: flex;
   justify-content: center;
   padding: 10px;
@@ -117,6 +118,7 @@ body {
 }
 .cicle_change{
   background-color: green;
+  border: none;
 }
 .cicle_pre{
   background-color: transparent;

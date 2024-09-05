@@ -19,9 +19,12 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
 }
 .list {
   width: 400px;
+  height: 100%;
+  max-height: 700px;
   background-image: url('https://i.pinimg.com/564x/3b/d2/1e/3bd21e0cef135afb8ec262164db008e2.jpg');
   position: relative;
 }
@@ -40,7 +43,8 @@ body {
 }
 
 .items {
-  height: 500px;
+  height: 65%;
+  max-width: 500px;
   overflow-y: auto;
   color: #262626;
 }

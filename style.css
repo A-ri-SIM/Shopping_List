@@ -12,13 +12,16 @@ button {
   cursor: pointer;
 }
 body {
+  width: 100vw;
+  height: 100vh;
   text-align: center;
   background-color: #262626;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .list {
   width: 400px;
-  margin: 5rem auto;
-  /* background-color: #f2f2f2; */
   background-image: url('https://i.pinimg.com/564x/3b/d2/1e/3bd21e0cef135afb8ec262164db008e2.jpg');
   position: relative;
 }
@@ -77,7 +80,7 @@ body {
   background-color: #a6a6a6;
   margin: auto;
 }
-.clear_btn{
+.clear_btn {
   width: 90%;
   background-color: #262626;
   padding: 5px 0;
@@ -86,7 +89,7 @@ body {
   color: #fff;
   border-radius: 20px;
 }
-.new_form{
+.new_form {
   width: 100%;
   display: flex;
   justify-content: center;
@@ -114,18 +117,18 @@ body {
   font-size: 19px;
 }
 
-.change{
+.change {
   color: green;
   border: none;
 }
-.pre{
+.pre {
   color: #262626;
 }
-.cicle_change{
+.cicle_change {
   background-color: green;
   border: none;
 }
-.cicle_pre{
+.cicle_pre {
   background-color: transparent;
   border: 1px solid #a6a6a6;
 }
